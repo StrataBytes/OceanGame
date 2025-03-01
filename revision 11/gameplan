@@ -1,0 +1,39 @@
+Current state of game since the 21st:
+
+Implemented Features / Mechanics:
+Implemented a lighting system for drawing shadows on objects, alongside a "spotlight" around the sub.
+Made a procedurally generated seabed using Perlin Noise.
+Camera rig & world coordinate system.
+Basic movement.
+Debug menu which can teleport to world coords, change sub speed and toggle lighting.
+
+Issues & Bugs:
+Submarine "spotlight" is illuminating behind object's shadows - I may need to rethink my lighting system setup.
+Seabed floor is always illuminated even when not in spotlight
+Seabed floor does not have shadow support... yet - unknown how difficult this may be to implement.
+
+
+Roadmap:
+Fix or address known bugs/issues as they appear. 
+
+HUD
+
+collision detection
+
+implement other procedurally generated terrain variants before working on anything else (Caves, Underwater Islands, Collapsed sinkholes.) 
+
+Refine visuals by creating background parallaxes & procedurally placed aquatic flora, rocks, etc.
+
+Plan out & implement mechanics such as Power, Depth, Hull Integrity, and perhaps an oxygen mechanic.
+This step will be with making the HUD. (Perhaps during this time I will make a main menu)
+
+That is what I am thinking of building so far, and after these are finished, I will start 
+
+
+
+General Future Logic Breakdown:
+This is more of just a place where I will dump ideas of how things will work before I start working on them.
+
+**Collision detection** idk ill have to look into it more.
+
+**caves** will be separate from the seabed generator, but influenced by it. If a point is pretty low on the seabed, there will be a chance that a cave could be there. If the chance is in favor, the cave will be generated also by perlin noise and cut through the seabed floor.** Collapsed Sinkholes** will use a similar logic - a variant of a cave.
